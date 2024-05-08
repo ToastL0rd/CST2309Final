@@ -1,0 +1,102 @@
+/* This style sheet details the background, header and footer for all pages. */
+
+html {
+
+    background-image: url(circuit.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+/* Header styles */
+header {
+    background-color: rgba(200, 200, 200, 0.814);
+    padding: 1em;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 25px;
+}
+
+header h1 {
+    font-size: 3.5em;
+}
+
+header h2 {
+    font-size: 2em;
+}
+
+
+header nav ul {
+    list-style-type: none;
+    font-size: 1.5em;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+header nav ul li {
+    background-color: gray;
+    border-radius: 25px;
+    text-decoration: none;
+    padding: 0.5em;
+    margin: 5px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+header ul li:hover {
+    background-color: #525151;
+
+}
+header ul li:active {
+    background-color: #b5b5b5;
+
+}
+
+/* Footer Styles */
+footer {
+    font-size: smaller;
+    display: grid;
+    background-color: rgba(200, 200, 200, 0.814);
+    padding: 1em;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 25px;
+    grid-template-columns: auto auto auto;
+}
+
+footer  p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 10px;
+}
+
+footer figure {
+    display: inline-block;
+}
+
+footer figcaption {
+    float: right; 
+}
+
+
+/* Set the font of all pages */
+@font-face {
+    font-family: sharetech;
+    src: url('ShareTech-Regular.ttf') format('truetype');
+}
+
+* {
+    font-family: sharetech, Verdana, Geneva, Tahoma, sans-serif;
+}

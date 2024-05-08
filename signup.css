@@ -1,0 +1,65 @@
+/* prices table styling */
+#prices {
+    background-color: rgba(200, 200, 200, 0.814);
+    border-radius: 25px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+#prices h2 {
+    font-size: 1.4em;
+}
+
+#prices ul {
+    list-style-position: inside;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+table, th, td {
+    border: 2px solid;
+  }
+
+th, td {
+    padding: 1em;
+}
+
+tbody, td, th {
+    background: linear-gradient(rgb(0, 74, 0), rgb(25, 25, 25));
+    color: white;
+}
+
+/* Subscription form section */
+#subscriptionForm {
+    background-color: rgba(200, 200, 200, 0.814);
+    border-radius: 25px;
+    padding: 1em;
+}
+
+#ccform {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+legend {
+    background-color: black;
+    
+}
+
+#personalInfo, #creditCardInfo {
+    background: linear-gradient(rgb(0, 74, 0), rgb(25, 25, 25));
+    border-radius: 25px;
+    color: white;
+}
+
+#formButtons {
+    text-align: center;
+    grid-column: 1 / span 2;
+}

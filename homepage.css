@@ -1,0 +1,75 @@
+/* This file specifies styles for the home page, specifically for article, 
+section, and aside */
+article, #reviews, #events {
+    background-color: rgba(200, 200, 200, 0.814);
+    border-radius: 25px;
+    padding: 1em;
+}
+
+#events {
+    margin-left: 5%;
+    overflow: scroll;
+    height: 300px;
+    max-height: 300px;
+}
+
+#reviews {
+    margin-left: 5%;
+    margin-bottom: 5%;
+    height: 300px;
+    max-height: 300px;
+}
+
+#events {
+    margin-top: 5%;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    
+}
+
+article {
+    grid-row: 1 / span 2;}
+
+article h2 {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+article p {
+    font-size: 1.2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#googlemaps {
+    height: 100%;
+}
+
+/* Reviews slideshows. All reviews are images. */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

@@ -1,0 +1,41 @@
+article, #volunteerExplaination, #volunteerSheet {
+    background-color: rgba(200, 200, 200, 0.814);
+    border-radius: 25px;
+    padding: 1em;
+}
+
+article{
+    margin-bottom: 1em;
+}
+
+#volunteerTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tbody, td, th {
+    border: 2px white solid;
+    background: linear-gradient(rgb(0, 74, 0), rgb(25, 25, 25));
+    color: white;
+}
+
+/* volunteer sheet and explaination */
+aside {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#volunteerExplaination {
+    margin-right: 1em;    
+}
+
+#volunteerExplaination h2 {
+    font-size: 1.4em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#volunteerExplaination p {
+    font-size: 1.2em;
+    text-align: center;
+}

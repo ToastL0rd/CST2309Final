@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Powerup Gym</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="common.css">
+        <link rel="stylesheet" href="signup.css">
+
+        <script src="formvalidation.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <H1>Power Up Gym</H1>
+            <h2>A place for brain to meet brawn!</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="volunteer.html">Volunteer!</a></li>
+                    <li><a href="signup.html">Sign up!</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <article>
+
+            <div id="prices">
+                <h2>Subscription Tiers</h2>
+                <table>
+                    <thead>
+                      <tr>
+                        <th colspan="3">Gym Memberships</th>
+                        <th colspan="3">Electronic Memberships<br></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Tier</td>
+                        <td>Price (Per Month)<br></td>
+                        <td>Description</td>
+                        <td>Tier</td>
+                        <td>Price (Per Month)</td>
+                        <td>Description</td>
+                      </tr>
+                      <tr>
+                        <td>Couch Potato</td>
+                        <td>49.99$</td>
+                        <td>
+                            <p>Basic access tier for the gym:</p>
+                            <ul>
+                                <li>24/7 Access to the gym</li>
+                                <li>Access to weight lifting section</li>
+                            </ul>
+                        </td>
+                        <td>Megabyte</td>
+                        <td>29.99$</td>
+                        <td>
+                            <p>Basic access tier for the repair shop:</p>
+                            <ul>
+                                <li>Priority wait time for repair consultations</li>
+                                <li>Priority repair lead times</li>
+                            </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Marathon</td>
+                        <td>79.99$<br></td>
+                        <td>
+                            <p>Higher access tier to the gym:</p> 
+                            <ul>
+                                <li>24/7 Access to the gym</li>
+                                <li>Access to weight lifting section</li>
+                                <li>Access to trainer consultation</li>
+                            </ul>
+                        </td>
+                        <td>Gigabyte<br></td>
+                        <td>49.99$</td>
+                        <td>
+                            <p>Higher access tier for the repair shop:</p>
+                            <ul>
+                                <li>Priority wait time for repair consultations</li>
+                                <li>Priority repair lead times</li>
+                                <li>Personalized device care consultation</li>
+                                <li>Device care checkups</li>
+                            </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Triathalon<br></td>
+                        <td>99.99$</td>
+                        <td>
+                            <p>Highest access tier to the gym:</p> 
+                            <ul>
+                                <li>24/7 Access to the gym</li>
+                                <li>Access to weight lifting section</li>
+                                <li>Access to trainer consultation</li>
+                                <li>Free classes/events</li>
+                                <li>Complimentary sports illustrated basic subscription</li>
+                                <li>Personalized meal planning sessions</li>
+                            </ul>
+                        </td>
+                        <td>Terabyte</td>
+                        <td>79.99$</td>
+                        <td>
+                            <p>Highest access tier for the repair shop:</p>
+                            <ul>
+                                <li>Priority wait time for repair consultations</li>
+                                <li>Priority repair lead times</li>
+                                <li>Personalized device care consultation</li>
+                                <li>Device care checkups</li>
+                                <li>Complimentary one time programmed Raspberry Pi Zero</li>
+                                <li>Free basic repair classes</li>
+                            </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                    </table>
+
+            </div>
+
+            <div id="subscriptionForm">
+
+                    <form id="ccform" name="ccform" action="submit.html"> 
+
+                        <fieldset id="personalInfo">
+                            
+                            <legend>Billing Information</legend>
+                            <label for="gymMembership">Select a Gym Membership, if applicable:</label>
+                            <select name="gymMembership" id="gymMembership">
+                                <option value="" selected disabled>Select a Gym Membership</option>
+                                <option value="None">None</option>
+                                <option value="49.99">Couch Potato (49.99$)</option>
+                                <option value="79.99">Marathon (79.99$)</option>
+                                <option value="99.99">Triathlon (99.99$)</option>
+                            </select><br><br>
+                            
+                            <label for="repairMembership">Select a Repair Shop Membership, if applicable:</label>
+                            <select name="repairMembership" id="repairMembership">
+                                <option value="" selected disabled>Select a Repair Shop Membership</option>
+                                <option value="None">None</option>
+                                <option value="29.99">Megabyte (29.99$)</option>
+                                <option value="49.99">Gigabyte (49.99$)</option>
+                                <option value="79.99">Terabyte (79.99$)</option>
+                            </select><br><br>
+
+                            <label>Payment Options:</label><br>
+                            <fieldset>
+                                <input value="0" type="radio" id="singleMonth" name="paymentOption" checked>
+                                <label for="singleMonth">Pay for only a single month</label><br>
+                                <input value="1" type="radio" id="autoPay" name="paymentOption">
+                                <label for="autoPay">Pay automatically every month</label><br>
+                            </fieldset>
+                            
+                            <label for="firstName">*First Name:</label><br>
+                            <input type="text" id="firstName" name="firstName" required><br><br>
+                    
+                            <label for="lastName">*Last Name:</label><br>
+                            <input type="text" id="lastName" name="lastName" required><br><br>
+                    
+                            <label for="email">*Email:</label><br>
+                            <input type="email" id="email" name="email" required><br><br>
+                    
+                            <label for="telephone">Telephone:</label><br>
+                            <input type="tel" id="telephone" name="telephone"><br><br>
+
+                        </fieldset>
+
+                        <fieldset id="creditCardInfo">
+                            <legend>Credit Card Information</legend>
+                            <label>*Credit Card</label>
+                            <fieldset id="ccNames">
+                            <label class="ccName">
+                                <input name="credit" value="amex" type="radio" required />               
+                                <span>American Express</span>
+                            </label>
+                            <label class="ccName">                              
+                                <input name="credit" value="mast" type="radio"  />
+                                <span>MasterCard</span>
+                            </label>
+                            <label class="ccName">                                    
+                                <input name="credit" value="visa" type="radio"  />
+                                <span>Visa</span>
+                            </label>
+                        </fieldset>
+
+                
+                        <label for="creditCard">*Credit Card Number:</label><br>
+                        <input type="text" id="creditCard" name="creditCard" required><br><br>
+                
+                        <label for="expirationMonth">*Expiration Month:</label><br>
+                        <select name="expirationMonth" id="expirationMonth" required>
+                            <option value="" selected disabled>Select Expiration Month</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select><br><br>
+                
+                        <label for="expirationYear">*Expiration Year:</label><br>
+                        <select name="expirationYear" id="expirationYear" required>
+                            <option value="" selected disabled>Select Expiration Year</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                        </select><br><br>
+                
+                        <label for="cvcnum">*CVC Number:</label><br>
+                        <input type="text" id="cvcnum" name="cvcnum" required pattern="^\d{3,4}$" >
+
+                    </fieldset>
+                    
+                <div id="formButtons">
+                    <input type="submit" value="Submit" id="subscribe">
+                    <input type="reset" value="Cancel">
+                 </div>
+
+                    </form>
+
+            </div>
+
+        </article>
+
+        
+
+
+        <footer>
+            <div>
+                <p>Visit us!<br>63-03 Fresh Pond Rd, Ridgewood, NY 11385</p>
+                <p>Tel: <a href="tel:+718843221">718-843-221</a></p>
+                <p>Cards Accepted:</p>
+                <figure>
+                    <img src="master.png" alt="Master Card">
+                    <figcaption>Master Card</figcaption>
+                </figure>
+                <figure>
+                    <img src="amex.png" alt="American Express">
+                    <figcaption>Master Card</figcaption>
+                </figure>
+                <figure>
+                    <img src="visa.png" alt="Visa">
+                    <figcaption>Master Card</figcaption>
+                </figure>
+            </div>
+
+            <div>
+                <p> <a href="">Reserve a Time For Repair Consultation</a> </p>
+                <p> <a href="">Fight for Right to Repair!</a> </p>
+                <p> <a href="">Learn How to Donate Your Devices</a> </p>
+                <p> <a href="">Visit Our E-bay Page</a> </p>
+                <p> <a href="">Learn How to Properly dispose of Batteries</a> </p>
+
+            </div>
+            
+            <div>
+                <p> <a href="">View Our Gym Classes</a> </p>
+                <p> <a href="">View Available Gym Memberships</a> </p>
+                <p> <a href="">Meal Prepping Classes</a> </p>
+                <p> <a href="">Weight Tournaments</a> </p>
+                <p> <a href="">Refer a Friend</a> </p>
+            </div>
+
+        </footer>
+    </body>
+</html>
