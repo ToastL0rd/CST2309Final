@@ -1,6 +1,8 @@
 /* prices table styling */
 #prices {
     background-color: rgba(200, 200, 200, 0.814);
+    box-shadow: rgb(40, 40, 40) 20px 0px 40px, rgb(20, 20, 20) -20px 0px 40px;
+
     border-radius: 25px;
     padding: 1em;
     display: flex;
@@ -39,6 +41,7 @@ tbody, td, th {
 /* Subscription form section */
 #subscriptionForm {
     background-color: rgba(200, 200, 200, 0.814);
+    box-shadow: rgb(40, 40, 40) 20px 0px 40px, rgb(20, 20, 20) -20px 0px 40px;
     border-radius: 25px;
     padding: 1em;
 }

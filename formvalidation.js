@@ -14,7 +14,7 @@ subscribe.addEventListener("click", ccCVVValidation);
 
 // If First Name field (id firstName) is empty, display custom valid message
 function firstNameValidation () {
-    let cardName = document.getElementById("firstName");
+    let firstName = document.getElementById("firstName");
     if (firstName.validity.valueMissing) {
         firstName.setCustomValidity("Enter your first name as it appears on the card");
     } else {
@@ -23,7 +23,7 @@ function firstNameValidation () {
 }
 
 function lastNameValidation () {
-    let cardName = document.getElementById("lastName");
+    let lastName = document.getElementById("lastName");
     if (lastName.validity.valueMissing) {
         lastName.setCustomValidity("Enter your last name as it appears on the card");
     } else {
