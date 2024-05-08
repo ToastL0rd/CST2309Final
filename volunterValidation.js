@@ -2,7 +2,6 @@ let submit = document.getElementById("submit");
 
 subscribe.addEventListener("click", firstNameValidation);
 subscribe.addEventListener("click", lastNameValidation);
-subscribe.addEventListener("click", volunteerDateValidation);
 
 // If there isn't a first and last name in the fields, display a custom validation error
 // If First Name field (id firstName) is empty, display custom valid message
